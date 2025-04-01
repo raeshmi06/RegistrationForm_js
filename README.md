@@ -26,15 +26,15 @@ This is a Javascript-based web application that includes:
 
 ### Screenshot 1
 
-![First screenshot] (https://github.com/raeshmi06/RegistrationForm_js/blob/master/log.PNG?raw=true)
+![First screenshot] (https://github.com/raeshmi06/RegistrationForm_js/blob/master/ProjectOutputs/log.PNG?raw=true)
 
 ### Screenshot 2
 
-![Second screenshot] (https://github.com/raeshmi06/RegistrationForm_js/blob/master/form.PNG?raw=true)
+![Second screenshot] (https://github.com/raeshmi06/RegistrationForm_js/blob/master/ProjectOutputs/form.PNG?raw=true)
 
 ### Screenshot 3
 
-![Third screenshot] (https://github.com/raeshmi06/RegistrationForm_js/blob/master/data's.PNG?raw=true)
+![Third screenshot] (https://github.com/raeshmi06/RegistrationForm_js/blob/master/ProjectOutputs/data's.PNG?raw=true)
 
 ## Installation
 
