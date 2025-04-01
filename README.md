@@ -12,8 +12,8 @@ This is a Javascript-based web application that includes:
 ## Features
 
 ✅: **Login Authentication**(UserName and Password Validation)
-✅:white_check_mark: **Form Data Storage**(Saves Name,DOB,Gender,course,E-mail in local storage)
-✅:white_check_mark: **Redirects between Pages**(Based on users action)
+✅: **Form Data Storage**(Saves Name,DOB,Gender,course,E-mail in local storage)
+✅: **Redirects between Pages**(Based on users action)
 
 ## Technologies used
 
