@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Complete</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet"href="css/example.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #formbkgrnd
+        {
+            height: 100%;
+            width: 100%;
+            background-color:#ed637f ;
+            background:linear-gradient(#ed637f,lightblue,orange);
+            position: absolute;
+            opacity: 0.6;
+        }
+        #formss{
+            background-color: transparent;
+            height: 100%;
+            width: 100%;
+            top: 0;  
+            padding: 0;
+            position:relative;
+        }
+        td{
+            padding: 12px;   
+        }
+    </style>
+</head>
+<body>
+    <div id="formbkgrnd"></div>
+    <div id="formss">
+        <h2 style="text-align: center;">Form</h2>
+        <form >
+            <table border="2px solid black" align="center" class="table-striped table-hover">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="name" placeholder="Enter Name" required></td>
+                </tr>
+                <tr>
+                    <td>DOB</td>
+                    <td><input type="date" id="datee" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <label>
+                        <input type="radio" name="Gender" value="Male">Male
+                        </label>
+                        <label>
+                        <input type="radio" name="Gender" value="Female" >Female
+                        </label>
+                        <label>
+                        <input type="radio" name="Gender" value="Others" >Others
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td>
+                        <select name="course" id="course" required>
+                            <option selected>  Course  </option>
+                            <option value="java">Java</option>
+                            <option value="C++">C++</option>
+                            <option value="Python">Python</option>
+                            <option value="C">C</option>
+                            <option value="javascript">javascript</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td ><input type="text" name="E-mail" id="mail" placeholder="E-mail id" required>
+                    
+                        <select name="id@" id="id@" >
+                            <option selected>@ .com</option>
+                            <option value="gmail.com">@ g-mail.com</option>
+                            <option value="yahoo.com">@ yahoo.com</option>
+                            <option value="outlook.com">@ outlook.com</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" onclick="save()" align="center" style="background-color: darkslategray;cursor: pointer; color: antiquewhite;">Save</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function save()
+        {
+            //get input
+            const a=document.getElementById("name").value;
+            const b=document.getElementById("datee").value;
+            const c=document.querySelector('input[name="Gender"]:checked').value;
+            const d=document.getElementById("course").value;
+            const e=document.getElementById("mail").value;
+            const f=document.getElementById("id@").value;
+            
+            //set location
+            localStorage.setItem('Name',a);
+            localStorage.setItem('DOB',b);
+            localStorage.setItem('Gender',c);
+            localStorage.setItem('Course',d);
+            localStorage.setItem('E-mail',e);
+            localStorage.setItem('ids',f);
+            //redirect
+            location.href='storeData.html';
+        }
+    </script>
+
+</body>
+</html>

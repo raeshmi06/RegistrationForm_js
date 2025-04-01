@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data's</title>
+    <style>
+        #displayData
+        {
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left:0;
+            position: absolute;
+            background:linear-gradient(#cccccc,teal);
+        }
+        #btnn
+        {
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            margin-top: 15px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-left: 70%;        
+        }
+        .datas
+        {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="displayData">
+        <button id="btnn" onclick="backto()">Back to Home Page!</button>
+        <div class="datas">
+            <h2 > User's Form!</h2>
+            <p id="shows"></p>
+        </div>    
+    </div>
+    <script>
+        var data=document.getElementById("shows")
+        function backto()
+        {
+            location.href="login.html";
+        }
+       var a =localStorage.getItem('Name');
+       var b =localStorage.getItem('DOB');
+       var c =localStorage.getItem('Gender');
+       var d =localStorage.getItem('Course');
+       var e =localStorage.getItem('E-mail');
+       var f =localStorage.getItem('ids');
+
+       if(a && b && c && d && e && f)
+       {
+        data.innerHTML=`<strong>Name:</strong>${a}<br>
+                        <strong>DOB:</strong>${b}<br>
+                        <strong>Gender:</strong>${c}<br>
+                        <strong>Course:</strong>${d}<br>
+                        <strong>E-mail:</strong>${e} @ ${f}`
+       }
+       else 
+       {
+        data.textContent=`No data found`
+        alert('Please fill the form')
+        location.href='form.html';
+       }
+       
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
