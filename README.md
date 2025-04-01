@@ -6,8 +6,8 @@ Login & Form Submission Project using **Javascript**
 
 This is a Javascript-based web application that includes:
 
-1️⃣**Login page** - Users enter a username and password, if correct inputs as mentioned in the page,it redirected to next page. 2️⃣**Form page** - Users enter their data such as Name,DOB,Gender,Course,E-mail which are stored in **local Storage** upon form submission.
-3️⃣**Data Display page** - Display the Saved user's information from Local storage.
+1️⃣**Login page** - Users enter a Username and Password, if correct inputs as mentioned in the page,it redirected to next page. 2️⃣**Form page** - Users enter their data such as Name,DOB,Gender,Course,E-mail which are stored in **local Storage** upon form submission.
+3️⃣**Data Display page** - Display the Saved user's information from Local Storage.
 
 ## Features
 
