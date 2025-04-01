@@ -22,10 +22,24 @@ This is a Javascript-based web application that includes:
 3️⃣**Javascript**(Event handler,Logic,functionality)
 4️⃣**Local Storage**(Data Persistence)
 
+## Project Screenshots
+
+### Screenshot 1
+
+![First screenshot] (https://github.com/raeshmi06/RegistrationForm_js/blob/master/log.PNG?raw=true)
+
+### Screenshot 2
+
+![Second screenshot] (https://github.com/raeshmi06/RegistrationForm_js/blob/master/form.PNG?raw=true)
+
+### Screenshot 3
+
+![Third screenshot] (https://github.com/raeshmi06/RegistrationForm_js/blob/master/data's.PNG?raw=true)
+
 ## Installation
 
 **Clone the Repository**
 
 ```sh
-
+git clone https://github.com/raeshmi06/RegistrationForm_js.git
 ```
